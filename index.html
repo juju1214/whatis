@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maria Alison</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div id="step1" class="step">
+            <p>Hey Julliene!</p>
+            <button onclick="nextStep(1)">Next</button>
+        </div>
+        <div id="step2" class="step hidden">
+            <p>I know Valentine’s Day is on the 14th, but life (a.k.a. work) has other plans for us that day. So, I thought—why not celebrate it on our own terms?</p>
+            <button onclick="nextStep(2)">Next</button>
+        </div>
+        <div id="step3" class="step hidden">
+            <p>February 16 might not be the official Valentine's date, but who says we have to follow the rules? What matters is spending time together, making memories, and having a great time. So, I wanted to ask...</p>
+            <button onclick="nextStep(3)">Next</button>
+        </div>
+        <div id="step4" class="step hidden">
+            <p>Would you be my Valentine on February 16? 💙</p>
+            <button onclick="handleResponse(true)">Yes</button>
+            <button onclick="handleResponse(false)">No</button>
+        </div>
+        <div id="step5" class="step hidden">
+            <p>What's your vibe?</p>
+            <button onclick="showVibe('coffee')">☕ Coffee date?</button>
+            <button onclick="showVibe('museum')">🎨 Museum date?</button>
+            <button onclick="showVibe('both')">🤔 Both, because why not?</button>
+        </div>
+        <div id="response" class="step hidden"></div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
